@@ -1,0 +1,28 @@
+{
+  "chinese": {
+    "class_counts": {
+      "2": 99,
+      "0": 102
+    },
+    "class_durations": {
+      "2": 5694.127249999999,
+      "0": 6260.617841269842
+    }
+  },
+  "english": {
+    "class_counts": {
+      "0": 63,
+      "2": 123
+    },
+    "class_durations": {
+      "0": 4145.7080000000005,
+      "2": 7386.518937500001
+    }
+  },
+  "summary": {
+    "chinese_total_samples": 201,
+    "chinese_total_duration": 11954.74509126984,
+    "english_total_samples": 186,
+    "english_total_duration": 11532.226937500001
+  }
+}

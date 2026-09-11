@@ -1,0 +1,53 @@
+# Primary settings reported in the MIRACLE-AD paper.
+sample_rate: 24000
+chunk_duration: 10.0
+overlap_factor: 0.5
+seed: 42
+
+training:
+  epochs: 100
+  batch_size: 1
+  accumulation_steps: 4
+  learning_rate: 0.03
+  final_learning_rate: 0.00003
+  weight_decay: 0.00005
+  patience: 15
+  optimizer: adamw
+  scheduler: cosine
+
+grid:
+  backbones:
+    - gamma_gm_cnn
+    - gamma_erb_cnn
+  networks:
+    - unilstm
+    - bilstm
+    - abmil
+    - gated_abmil
+
+dataset_groups:
+  chinese:
+    - ncmmsc
+    - taukadial_c
+    - mchou
+  spanish:
+    - ivanova
+  english:
+    - pitt
+    - taukadial_e
+    - vas
+    - elu
+  greek:
+    - gds3
+    - gpilot
+  multilingual:
+    - ncmmsc
+    - taukadial_c
+    - mchou
+    - ivanova
+    - pitt
+    - taukadial_e
+    - vas
+    - elu
+    - gds3
+    - gpilot

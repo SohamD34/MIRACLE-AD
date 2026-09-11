@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the MIRACLE-AD paper."
+title: "MIRACLE-AD: Multilingual Interpretable Raw-Speech Acoustic Learning for Alzheimer's Detection"
+type: software
+authors:
+  - family-names: Goyal
+    given-names: Shubh
+  - family-names: Deshmukh
+    given-names: Soham
+  - family-names: Gupta
+    given-names: Kwanit
+  - family-names: Singh
+    given-names: Richa
+repository-code: "https://github.com/SohamD34/MIRACLE-AD"
+license: MIT
+version: 0.1.0

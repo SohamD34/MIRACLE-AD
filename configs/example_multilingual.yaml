@@ -1,0 +1,31 @@
+# This file can be passed directly to `miracle-ad-train --config ...`.
+datasets:
+  - ncmmsc
+  - taukadial_c
+  - mchou
+  - ivanova
+  - pitt
+  - taukadial_e
+  - vas
+  - elu
+  - gds3
+  - gpilot
+backbone: gamma_erb_cnn
+network: gated_abmil
+sample_rate: 24000
+chunk_duration: 10.0
+overlap_factor: 0.5
+combine_mci_ad: false
+language_aware: true
+language_loss_weight: 0.5
+loss: auto
+epochs: 100
+batch_size: 1
+accumulation_steps: 4
+learning_rate: 0.03
+final_learning_rate: 0.00003
+weight_decay: 0.00005
+patience: 15
+optimizer: adamw
+scheduler: cosine
+seed: 42

@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environments and local configuration
+.venv/
+venv/
+.env
+.idea/
+.vscode/
+
+# Licensed datasets are never committed. Fixed split metadata lives under
+# src/miracle_ad/splits and is intentionally tracked.
+/data/
+/Datasets/
+
+# Generated experiment artifacts
+/outputs/
+/checkpoints/
+/runs/
+*.pth
+*.pt
+events.out.tfevents.*
+*.log
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.swp

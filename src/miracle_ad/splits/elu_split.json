@@ -1,0 +1,32 @@
+{
+    "train": {
+        "../Datasets/English/Lu\\Control\\F40.mp3": 0,
+        "../Datasets/English/Lu\\Control\\F52.mp3": 0,
+        "../Datasets/English/Lu\\Control\\F31.mp3": 0,
+        "../Datasets/English/Lu\\Control\\F39.mp3": 0,
+        "../Datasets/English/Lu\\Control\\F29.mp3": 0,
+        "../Datasets/English/Lu\\Control\\F46.mp3": 0,
+        "../Datasets/English/Lu\\Control\\F53.mp3": 0,
+        "../Datasets/English/Lu\\Dementia\\F02.mp3": 1,
+        "../Datasets/English/Lu\\Dementia\\F06.mp3": 1,
+        "../Datasets/English/Lu\\Dementia\\F20.mp3": 1,
+        "../Datasets/English/Lu\\Dementia\\F03.mp3": 1,
+        "../Datasets/English/Lu\\Dementia\\F09.mp3": 1
+    },
+    "val": {
+        "../Datasets/English/Lu\\Control\\F36.mp3": 0,
+        "../Datasets/English/Lu\\Dementia\\F18.mp3": 1
+    },
+    "test": {
+        "../Datasets/English/Lu\\Control\\F38.mp3": 0,
+        "../Datasets/English/Lu\\Control\\F49.mp3": 0,
+        "../Datasets/English/Lu\\Control\\F34.mp3": 0,
+        "../Datasets/English/Lu\\Dementia\\F28.mp3": 1,
+        "../Datasets/English/Lu\\Dementia\\F10.mp3": 1,
+        "../Datasets/English/Lu\\Control\\F43.mp3": 0,
+        "../Datasets/English/Lu\\Dementia\\F17.mp3": 1,
+        "../Datasets/English/Lu\\Dementia\\F23.mp3": 1,
+        "../Datasets/English/Lu\\Dementia\\F12.mp3": 1,
+        "../Datasets/English/Lu\\Dementia\\F47.mp3": 1
+    }
+}

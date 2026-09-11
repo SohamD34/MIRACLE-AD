@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "miracle-ad"
+version = "0.1.0"
+description = "Multilingual interpretable raw-speech acoustic learning for Alzheimer's detection"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+  {name = "Shubh Goyal"},
+  {name = "Soham Deshmukh"},
+  {name = "Kwanit Gupta"},
+  {name = "Richa Singh"},
+]
+dependencies = [
+  "audiomentations>=0.38,<1",
+  "librosa>=0.10.2,<1",
+  "matplotlib>=3.8,<4",
+  "numpy>=1.26,<3",
+  "PyYAML>=6,<7",
+  "scikit-learn>=1.4,<2",
+  "seaborn>=0.13,<1",
+  "soundfile>=0.12,<1",
+  "tensorboard>=2.16,<3",
+  "torch>=2.2,<3",
+  "tqdm>=4.66,<5",
+]
+
+[project.optional-dependencies]
+wav2vec = ["transformers>=4.40,<5"]
+dev = ["pytest>=8,<9", "ruff>=0.6,<1"]
+
+[project.scripts]
+miracle-ad-train = "miracle_ad.cli.train:main"
+miracle-ad-ssl = "miracle_ad.ssl_training:main"
+miracle-ad-predict = "miracle_ad.cli.predict:main"
+miracle-ad-splits = "miracle_ad.cli.splits:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"miracle_ad.splits" = ["*.json", "*.csv", "README.md"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = ["E501"]

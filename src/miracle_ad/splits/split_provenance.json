@@ -1,0 +1,30 @@
+{
+  "schema_version": 2,
+  "partition_keys": [
+    "train",
+    "val",
+    "test"
+  ],
+  "source_schema": {
+    "train": "legacy training pool",
+    "val": "legacy fixed holdout"
+  },
+  "migration": {
+    "legacy_val_destination": "test",
+    "legacy_val_membership_changed": false,
+    "validation_source": "legacy train",
+    "validation_share_of_legacy_train": 0.1,
+    "seed": 42,
+    "stratified_by": [
+      "dataset",
+      "label"
+    ],
+    "selection": "Sort normalized path strings, shuffle each dataset-label group with Python random.Random('42:<dataset>:<label>'), round group_size * 0.10, and retain at least one validation item for each non-singleton label group."
+  },
+  "totals_across_split_artifacts": {
+    "legacy_train": 2000,
+    "train": 1800,
+    "val": 200,
+    "test": 656
+  }
+}
