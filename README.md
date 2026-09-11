@@ -10,8 +10,8 @@ language head supports multilingual training, while attention pooling exposes
 the chunks that most influenced a prediction.
 
 This repository is organized as an installable Python package. Training code is
-under `src/miracle_ad/`; generated checkpoints, figures, logs, and licensed audio
-are intentionally kept out of Git.
+kept directly under `src/`; generated checkpoints, figures, logs, and licensed
+audio are intentionally kept out of Git.
 
 ## Paper configuration
 
@@ -98,8 +98,7 @@ Check split integrity and path resolution before a long run:
 miracle-ad-splits --check-files
 ```
 
-The committed artifacts are in
-[`src/miracle_ad/splits`](src/miracle_ad/splits). See
+The committed artifacts are in [`src/splits`](src/splits). See
 [`docs/DATASETS.md`](docs/DATASETS.md) for labels, partition semantics, and the
 expected corpus layout.
 
@@ -211,7 +210,7 @@ Add `--execute` to run the generated commands.
 ├── configs/                  # Reproducible experiment presets
 ├── docs/                     # Dataset, CLI, experiment, and migration guidance
 ├── scripts/                  # Grid orchestration utilities
-├── src/miracle_ad/
+├── src/
 │   ├── cli/                  # Train, inference, and split inspection CLIs
 │   ├── splits/               # Versioned JSON split artifacts
 │   ├── data.py               # Raw-audio MIL bags

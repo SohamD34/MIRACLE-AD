@@ -8,13 +8,13 @@ over preserving the workspace's historical directory layout.
 
 | Research component | Clean location |
 |---|---|
-| Backbone and MIL model definitions | `src/miracle_ad/models.py` |
-| Supervised training and evaluation | `src/miracle_ad/training.py` |
-| Supervised entry point | `src/miracle_ad/cli/train.py` |
-| SimCLR-style backbone pretraining | `src/miracle_ad/ssl_training.py` |
-| SSL audio pipeline | `src/miracle_ad/ssl_data.py` |
-| JSON-based dataset loading | `src/miracle_ad/data.py` and `split_registry.py` |
-| Fixed split artifacts and TAUKADIAL metadata | `src/miracle_ad/splits/` |
+| Backbone and MIL model definitions | `src/models.py` |
+| Supervised training and evaluation | `src/training.py` |
+| Supervised entry point | `src/cli/train.py` |
+| SimCLR-style backbone pretraining | `src/ssl_training.py` |
+| SSL audio pipeline | `src/ssl_data.py` |
+| JSON-based dataset loading | `src/data.py` and `src/split_registry.py` |
+| Fixed split artifacts and TAUKADIAL metadata | `src/splits/` |
 
 All 13 backbone choices from the active workspace are exposed through the same
 factory and both SSL and supervised training. The paper's four pooling choices,

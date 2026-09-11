@@ -40,8 +40,9 @@ miracle-ad-ssl = "miracle_ad.ssl_training:main"
 miracle-ad-predict = "miracle_ad.cli.predict:main"
 miracle-ad-splits = "miracle_ad.cli.splits:main"
 
-[tool.setuptools.packages.find]
-where = ["src"]
+[tool.setuptools]
+packages = ["miracle_ad", "miracle_ad.cli", "miracle_ad.splits"]
+package-dir = {"miracle_ad" = "src"}
 
 [tool.setuptools.package-data]
 "miracle_ad.splits" = ["*.json", "*.csv", "README.md"]
@@ -49,7 +50,6 @@ where = ["src"]
 [tool.pytest.ini_options]
 addopts = "-ra"
 testpaths = ["tests"]
-pythonpath = ["src"]
 
 [tool.ruff]
 line-length = 100

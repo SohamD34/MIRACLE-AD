@@ -37,7 +37,7 @@ possible; across all artifacts, exactly 200 of the original 2,000 training-pool
 entries moved to validation.
 
 The machine-readable migration recipe and aggregate counts are stored in
-`src/miracle_ad/splits/split_provenance.json`.
+`src/splits/split_provenance.json`.
 
 Membership is now fixed in JSON and is never resampled at runtime. The files
 still contain legacy `../Datasets/...` prefixes and mixed slash styles; the
